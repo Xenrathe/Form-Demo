@@ -9,40 +9,52 @@
 <body>
   <div class="logo-bg">
     <div class="logo">
-      <img src="PZDLogoAlpha.png">
-      <span>Scientist's Union</span>
+      <img id="logo-img" src="Images/PZDLogoAlpha.png" height="110" width="110">
+      <span id="org-name">Scientist's Union</span>
     </div>
     <div class="photo-credit">
-      <p>Photo by X, on Y.</p>
+      <p>Photo by <a href="https://unsplash.com/de/@despinagalani?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Despina Galani</a> on <a href="https://unsplash.com/photos/JSTpIKlrUTQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
     </div>
   </div>
   <div class="info-form">
     <div class="intro">
       <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-      Sign up now to get started.</p>
+      Sign up now to get started.<br><br>
 
-      <p>You know you want to.</p>
+      You know you want to.</p>
     </div>
     <div class="account-form">
+      <p>Let's do this!</p>
       <form id="user-info">
-        <fieldset>
-          <legend>Let's do this!</legend>
-
+        <div class="single-input">
           <label for="first-name">FIRST NAME</label>
           <input id="first-name" name="first-name"/>
+        </div>
+        <div class="single-input">
           <label for="last-name">LAST NAME</label>
           <input id="last-name" name="last-name"/>
+        </div>
+        <div class="single-input">
           <label for="email">EMAIL</label>
-          <input id="email" name="email"/>
+          <input type="email" name="email"/>
+        </div>
+        <div class="single-input">
+          <label for="phone-number">PHONE NUMBER</label>
+          <input type="tel" id="phone-number" name="phone-number"/>
+        </div>
+        <div class="single-input">
           <label for="password">PASSWORD</label>
-          <input id="password" name="password"/>
+          <input type="password" id="password" name="password"/>
+        </div>
+        <div class="single-input">
           <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input id="confirm-password" name="confirm-password"/>
-        </fieldset>
+          <input type="password" id="confirm-password" name="confirm-password"/>
+        </div>
       </form>
     </div>
     <div class="submit">
-      <input type="submit" form="user-info"/>
+      <button type="submit" form="user-info">Create Account</button>
       <p>Already have an account? Log in</p>
     </div>
   </div>

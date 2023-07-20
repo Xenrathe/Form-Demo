@@ -1,9 +1,132 @@
 body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: stretch;
+  width: 70%;
+  background: white;
+  margin: 0 10%;
+}
+
+html {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
 }
 
 .account-form {
   display: flex;
   flex-direction: column;
+}
+
+.logo-bg{
+  background-image: url("Images/greek-temple.jpg");
+  background-size: cover;
+  flex: 35%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  background-color: rgba(14, 14, 14, 0.438);
+  margin-top: 40%;
+  margin-bottom: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-img {
+  color: white;
+}
+
+#org-name {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+
+.info-form{
+  flex: 65%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.intro{
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  height: 35%;
+
+  display: flex;
+  align-items: end;
+}
+
+.intro p{
+  color: black;
+  font-size: calc(8px + 1vw);
+  font-weight: bold;
+  padding: 0px 200px 0px 40px;
+  margin-top: auto;
+}
+
+.account-form, .submit{
+  padding: 0px 0px 25px 40px;
+}
+
+.account-form {
+  box-shadow: 0px 5px 5px rgb(192, 192, 192);
+}
+
+.account-form p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 10%;
+  padding: 0px 200px 0px 0px;
+}
+
+.single-input {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 150px;
+  max-width: 200px;
+}
+
+label {
+  font-size: 12px;
+}
+
+.submit {
+  padding-top: 20px;
+}
+
+.submit button {
+  border: none;
+  color: white;
+  background-color:tan;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 10px 30px;
 }
